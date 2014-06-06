@@ -14,6 +14,9 @@
 		5B3499DF1941482400891444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3499DD1941482400891444 /* Main.storyboard */; };
 		5B3499E11941482400891444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3499E01941482400891444 /* Images.xcassets */; };
 		5B3499ED1941482400891444 /* DemoSwiftGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3499EC1941482400891444 /* DemoSwiftGameTests.swift */; };
+		5B3499FC19415F8500891444 /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3499F919415F8500891444 /* DemoTest.swift */; };
+		5B3499FD19415F8500891444 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3499FA19415F8500891444 /* HelloWorld.swift */; };
+		5B3499FE19415F8500891444 /* shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3499FB19415F8500891444 /* shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		5B3499E61941482400891444 /* DemoSwiftGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSwiftGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3499EB1941482400891444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B3499EC1941482400891444 /* DemoSwiftGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSwiftGameTests.swift; sourceTree = "<group>"; };
+		5B3499F919415F8500891444 /* DemoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
+		5B3499FA19415F8500891444 /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		5B3499FB19415F8500891444 /* shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		5B3499C71941482400891444 = {
 			isa = PBXGroup;
 			children = (
+				5B3499F619415F8500891444 /* DemoSource */,
 				5B3499D21941482400891444 /* DemoSwiftGame */,
 				5B3499E91941482400891444 /* DemoSwiftGameTests */,
 				5B3499D11941482400891444 /* Products */,
@@ -113,6 +120,32 @@
 				5B3499EB1941482400891444 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B3499F619415F8500891444 /* DemoSource */ = {
+			isa = PBXGroup;
+			children = (
+				5B3499F719415F8500891444 /* OCCode */,
+				5B3499F819415F8500891444 /* SwiftCode */,
+			);
+			path = DemoSource;
+			sourceTree = "<group>";
+		};
+		5B3499F719415F8500891444 /* OCCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OCCode;
+			sourceTree = "<group>";
+		};
+		5B3499F819415F8500891444 /* SwiftCode */ = {
+			isa = PBXGroup;
+			children = (
+				5B3499F919415F8500891444 /* DemoTest.swift */,
+				5B3499FA19415F8500891444 /* HelloWorld.swift */,
+				5B3499FB19415F8500891444 /* shape.swift */,
+			);
+			path = SwiftCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3499FD19415F8500891444 /* HelloWorld.swift in Sources */,
 				5B3499DA1941482400891444 /* GameScene.swift in Sources */,
 				5B3499DC1941482400891444 /* GameViewController.swift in Sources */,
+				5B3499FC19415F8500891444 /* DemoTest.swift in Sources */,
 				5B3499D61941482400891444 /* AppDelegate.swift in Sources */,
+				5B3499FE19415F8500891444 /* shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,9 +369,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang fasheng (QRZJ36RX88)";
 				INFOPLIST_FILE = DemoSwiftGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
 			};
 			name = Debug;
 		};
@@ -344,9 +382,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang fasheng (QRZJ36RX88)";
 				INFOPLIST_FILE = DemoSwiftGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
 			};
 			name = Release;
 		};
@@ -405,6 +445,7 @@
 				5B3499F21941482400891444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B3499F31941482400891444 /* Build configuration list for PBXNativeTarget "DemoSwiftGameTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +454,7 @@
 				5B3499F51941482400891444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
