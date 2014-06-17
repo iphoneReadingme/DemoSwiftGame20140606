@@ -20,11 +20,12 @@ class HelloWorld
 		contentCreated = false;
 	}
 	
-	func newHelloLabelNode() -> SKLabelNode
+	func newHelloLabelNode(frame: CGRect) -> SKLabelNode
 	{
 		labelNode = SKLabelNode(text: "test");
 		labelNode.text = "Hello, World!"
 		labelNode.position =  CGPointMake(100, 0)
+		labelNode.position = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
 		labelNode.fontSize = 40
 		labelNode.fontColor = UIColor.blueColor();
 		labelNode.color = UIColor.grayColor();
